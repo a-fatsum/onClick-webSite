@@ -3071,6 +3071,7 @@ input[type="button"]:disabled,
   top: 50%;
   width: 2em;
   z-index: 1;
+  /* font-size: 2rem; */
 }
 
 /* Spotlight */
@@ -4258,4 +4259,24 @@ body.is-touch #banner {
     margin: 0;
     padding: 0;
   }
+}
+/*  */
+.content header {
+  text-align: center;
+}
+#banner h1 {
+  font-size: 3rem;
+}
+#banner h1 span {
+  color: #e44c65;
+}
+
+#one h2:first-of-type {
+  /* color: #e44c65; */
+}
+.span-color {
+  color: #e44c65;
+}
+.melbourne {
+  border-bottom: 0.1rem solid #e44c65;
 }
