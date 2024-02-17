@@ -34,7 +34,7 @@
   --THEME-COLOR: #fe9400;
 
   /* --COLOR-1: rgba(254, 0, 0, 0.876); */
-  /* --COLOR-2: #00e1ff; */
+  /* --COLOR-2: #fe9400; */
   /* --COLOR-3: rgb(0, 8, 255); */
   /* --COLOR-4: rgb(0, 0, 0); */
   /* --COLOR-5: #fe9400af; */
@@ -211,7 +211,7 @@ html {
 
 html,
 body {
-  background: var(--COLOR-2);
+  background: var(--THEME-COLOR);
 }
 
 body.is-preload *,
@@ -3121,9 +3121,8 @@ input[type="button"]:disabled,
   top: 50%;
   width: 2em;
   z-index: 1;
-  /* font-size: 2rem; */
+  color: black;
 }
-
 /* Spotlight */
 
 .spotlight {
@@ -3134,7 +3133,7 @@ input[type="button"]:disabled,
   height: 100vh;
   overflow: hidden;
   position: relative;
-  /* background-color: tomato; */
+  background-color: var(--THEME-COLOR);
 }
 
 .spotlight:nth-last-of-type(1) {
@@ -3281,8 +3280,12 @@ input[type="button"]:disabled,
 .spotlight.bottom .content {
   border-top-width: 0.35em;
   bottom: 0;
+  /* background-color: tomato; */
+  height: 45rem;
 }
-
+.spotlight.bottom .content .container .row {
+  background-color: tomato;
+}
 .spotlight.left .content,
 .spotlight.right .content {
   height: 101%;
@@ -3326,7 +3329,8 @@ input[type="button"]:disabled,
   -moz-transform: translate(0, 1.5em);
   -webkit-transform: translate(0, 1.5em);
   -ms-transform: translate(0, 1.5em);
-  transform: translate(0, 1.5em);
+  color: black;
+  transform: translate(0, 1.5 em);
   opacity: 0;
 }
 
@@ -3911,7 +3915,8 @@ body.is-touch #banner {
     display: none;
   }
 
-  /* Wrapper */
+  color: black; /* Wrapper *
+  /
 
   .wrapper {
     padding: 4.5em 2.5em 2.5em 2.5em;
@@ -3927,6 +3932,7 @@ body.is-touch #banner {
     height: 7em;
   }
 
+  color: black;
   #banner .content {
     padding: 9em 0;
     text-align: center;
@@ -4341,16 +4347,22 @@ body.is-touch #banner {
   /* color: #e44c65; */
   color: var(--THEME-COLOR);
 }
+
+.icon {
+  border: 1px solid var(--THEME-COLOR);
+}
+
 .melbourne {
   /* border-bottom: 0.1rem solid #e44c65; */
   border-bottom: 0.1rem solid var(--THEME-COLOR);
 }
 
-.actions {
-  background-color: tomato;
+#contact-form {
+  border: 1px solid var(--THEME-COLOR);
+  border-radius: 5px;
+  padding: 1rem;
 }
 
-.contact-form {
-  background-color: olive;
-  /* display: none; */
+#four {
+  background-color: var(--COLOR-2);
 }

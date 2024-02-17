@@ -16,6 +16,14 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
   </head>
   <body class="is-preload landing">
     <div id="page-wrapper">
@@ -78,36 +86,46 @@
               <div class="col-4 col-12-medium">
                 <header>
                   <h2>Ready to take your online presence to the next level?</h2>
+                  <!-- <h2>
+                    Looking for a creative and professional website designer in
+                    <span class="melbourne">Melbourne</span>?
+                  </h2> -->
+                </header>
+                <div class="col-4 col-12-medium">
+                  <p>
+                    At
+                    <strong
+                      ><span class="span-color">O</span>n.Clic<span
+                        class="span-color"
+                        >k</span
+                      ></strong
+                    >, exceptional service is at the core of everything we do.
+                    We understand that every business is different, which is why
+                    we take the time to listen to your needs and tailor our
+                    solutions to meet your specific requirements. From the
+                    initial consultation to the final launch, we're committed to
+                    providing you with a seamless and stress-free experience.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-4 col-12-medium">
+                <header>
+                  <!-- <h2>Ready to take your online presence to the next level?</h2> -->
                   <h2>
                     Looking for a creative and professional website designer in
                     <span class="melbourne">Melbourne</span>?
                   </h2>
                 </header>
-              </div>
-              <div class="col-4 col-12-medium">
-                <p>
-                  At
-                  <strong
-                    ><span class="span-color">O</span>n.Clic<span
-                      class="span-color"
-                      >k</span
-                    ></strong
-                  >, exceptional service is at the core of everything we do. We
-                  understand that every business is different, which is why we
-                  take the time to listen to your needs and tailor our solutions
-                  to meet your specific requirements. From the initial
-                  consultation to the final launch, we're committed to providing
-                  you with a seamless and stress-free experience.
-                </p>
-              </div>
-              <div class="col-4 col-12-medium">
-                <p>
-                  Let us help you create a website that not only showcases your
-                  brand in the best possible light but also drives meaningful
-                  results for your business. Contact us today to schedule a
-                  consultation with our team in
-                  <span class="melbourne">Melbourne</span>.
-                </p>
+                <div class="col-4 col-12-medium">
+                  <p>
+                    Let us help you create a website that not only showcases
+                    your brand in the best possible light but also drives
+                    meaningful results for your business. Contact us today to
+                    schedule a consultation with our team in
+                    <span class="melbourne">Melbourne</span>.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -210,7 +228,7 @@
             <div class="row gtr-uniform">
               <section class="col-4 col-6-medium col-12-xsmall">
                 <span class="icon solid alt major fa-chart-area"></span>
-                <h3>Business website</h3>
+                <h3>Business</h3>
                 <p>
                   Business-centric web development. From startups to established
                   enterprises, we specialize in websites that drive growth.
@@ -262,26 +280,35 @@
           <footer class="major">
             <ul class="actions special">
               <li>
-                <a href="#" class="button">Get a quote within 24 hours</a>
+                <a class="button">Get a quote within 24 hours</a>
               </li>
             </ul>
+
             <!-- Contact Form -->
-            <div class="container contact-form">
+            <div class="container" id="contact-form">
               <form action="action_page.php">
-                <label for="fname">First Name</label>
+                <label for="name">Your Name</label>
                 <input
                   type="text"
-                  id="fname"
+                  id="name"
                   name="firstname"
                   placeholder="Your name.."
                 />
 
-                <label for="lname">Last Name</label>
+                <label for="phone">Contact Number</label>
                 <input
                   type="text"
-                  id="lname"
-                  name="lastname"
-                  placeholder="Your last name.."
+                  id="phone"
+                  name="contact-number"
+                  placeholder="Your contact number.."
+                />
+
+                <label for="email">Email Address</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email-address"
+                  placeholder="Your contact email address.."
                 />
 
                 <label for="state">State or Territory</label>
@@ -296,11 +323,30 @@
                   <option name="nt">Northern Territory</option>
                 </select>
 
+                <label for="project-type">Project type</label>
+                <select id="project-type" name="type">
+                  <option name="business">Business</option>
+                  <option name="commerce">E-commerce</option>
+                  <option name="landing">Landing Page</option>
+                  <option name="personal">Personal Website</option>
+                  <option name="portfolio">Portfolio</option>
+                  <option name="other">Other</option>
+                </select>
+
+                <label for="budget">Budget</label>
+                <input placeholder="What is your budget?" type="text" />
+
                 <label for="subject">Subject</label>
                 <textarea
                   id="subject"
                   name="subject"
-                  placeholder="Write something.."
+                  placeholder="Tell us more..
+                  e.g...
+                  Main product or service?
+                  Any spicific features?
+                  Do you have a design in mind or would you like us to design your website?
+                  Do you have an example of a silimar website that inspired you?
+                  "
                   style="height: 200px"
                 ></textarea>
 
@@ -390,5 +436,9 @@
     <script src="./assets/js/breakpoints.min.js"></script>
     <script src="./assets/js/util.js"></script>
     <script src="./assets/js/main.js"></script>
+    <!--  -->
+    <script src="./assets/js/contact.form.js"></script>
+
+    <!--  -->
   </body>
 </html>
