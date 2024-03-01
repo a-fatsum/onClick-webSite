@@ -3121,8 +3121,9 @@ input[type="button"]:disabled,
   top: 50%;
   width: 2em;
   z-index: 1;
-  color: black;
+  /* background-color: olive; */
 }
+
 /* Spotlight */
 
 .spotlight {
@@ -3283,9 +3284,16 @@ input[type="button"]:disabled,
   /* background-color: tomato; */
   height: 45rem;
 }
-.spotlight.bottom .content .container .row {
-  background-color: tomato;
+.spotlight.bottom .content .container .row .col-4 {
+  /* background-color: tomato; */
+  margin: auto;
+  margin-top: 8%;
+  text-align: start;
 }
+.spotlight.bottom .content .container .row .col-4 header {
+  text-align: start;
+}
+
 .spotlight.left .content,
 .spotlight.right .content {
   height: 101%;
@@ -3294,6 +3302,11 @@ input[type="button"]:disabled,
   /* width: 28em; */
   /* width: 28em; */
   width: 35em;
+  /* background-color: olive; */
+}
+.spotlight.left .content header,
+.spotlight.right .content header {
+  text-align: start;
 }
 
 .spotlight.left .content {
@@ -3313,6 +3326,14 @@ input[type="button"]:disabled,
 
 .spotlight.style2 .content {
   border-color: #5480f1;
+}
+
+.content-wrapper {
+  /* background-color: olive; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* left: 2%; */
 }
 
 .spotlight.style3 .content {
@@ -3554,6 +3575,7 @@ body.landing .dropotron.level-0 {
 
 #header {
   background: rgba(39, 40, 51, 0.965);
+
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
   cursor: default;
   height: 3.5em;
@@ -3597,6 +3619,8 @@ body.landing .dropotron.level-0 {
   height: inherit;
   line-height: inherit;
   outline: 0;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 #header nav ul li a.button,
@@ -3704,8 +3728,13 @@ body.landing #header {
   vertical-align: middle;
 }
 
+#banner .content header h1 {
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
 #banner .content header h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -3907,6 +3936,12 @@ body.is-touch #banner {
     margin-left: 0;
   }
 
+  .spotlight.style2 .content header,
+  .spotlight.style3 .content header {
+    /* background-color: yellowgreen; */
+    text-align: center;
+  }
+
   .spotlight .content ul.actions li:first-child {
     padding-left: 0;
   }
@@ -3915,7 +3950,7 @@ body.is-touch #banner {
     display: none;
   }
 
-  color: black; /* Wrapper *
+  /* Wrapper *
   /
 
   .wrapper {
@@ -3932,7 +3967,6 @@ body.is-touch #banner {
     height: 7em;
   }
 
-  color: black;
   #banner .content {
     padding: 9em 0;
     text-align: center;
@@ -4361,6 +4395,7 @@ body.is-touch #banner {
   border: 1px solid var(--THEME-COLOR);
   border-radius: 5px;
   padding: 1rem;
+  display: none;
 }
 
 #four {
