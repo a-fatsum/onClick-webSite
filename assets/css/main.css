@@ -3244,13 +3244,19 @@ input[type="button"]:disabled,
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
-  /* background: rgba(23, 24, 32, 0.95); */
-  background: #ffffffe0;
-  /* background-image: url(/images/click-here.svg); */
-  background-repeat: no-repeat;
+  background: rgba(23, 24, 32, 0.975);
+  /* background: #ffffffe0; */
+  background-image: url(/images/interview-yellow.svg),
+    url(/images/coder-yellow.svg);
+  /* background-image: url(/images/coder-yellow.svg); */
+
+  background-repeat: no-repeat, no-repeat;
   background-attachment: fixed;
-  background-position: left bottom;
-  background-size: 350px 300px;
+  background-position: left bottom, right top;
+  background-origin: content-box;
+  /*  */
+  background-size: 350px 150px;
+  /* background-size: 100% auto; */
   border-style: solid;
   opacity: 1;
   position: absolute;
@@ -3303,7 +3309,7 @@ input[type="button"]:disabled,
 
 .blue {
   padding: 15px;
-  background-color: #006afe;
+  background-color: #006afe62;
   line-height: 30px;
   font-weight: 400;
 }
@@ -3317,8 +3323,10 @@ input[type="button"]:disabled,
 .spotlight.bottom .content .container .row .col-4 header h2 {
   /* background-color: tomato; */
   text-align: start;
-  color: #006afe;
-  font-weight: bold;
+  /* color: #006afe; */
+  color: var(--THEME-COLOR);
+
+  /* font-weight: bold; */
   /* font-weight: 700; */
   /* text-align: center; */
 }
@@ -3327,14 +3335,17 @@ input[type="button"]:disabled,
   display: block;
   /* background-color: red; */
   width: fit-content;
+  /* height: 300px; */
   margin: auto;
   margin-top: 5%;
+  /*  */
 }
 .x a {
   color: var(--THEME-COLOR);
   font-size: 1.1rem;
   font-weight: 300;
   border-bottom: 2px solid var(--THEME-COLOR);
+  /* border-bottom: 2px solid #006afe; */
 }
 
 .spotlight.left .content,
@@ -4431,7 +4442,8 @@ body.is-touch #banner {
 
 .melbourne {
   /* border-bottom: 0.1rem solid #e44c65; */
-  border-bottom: 0.1rem solid var(--THEME-COLOR);
+  /* border-bottom: 0.1rem solid var(--THEME-COLOR); */
+  border-bottom: 0.1rem solid #ffca00;
 }
 
 #contact-form {
