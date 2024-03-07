@@ -3246,7 +3246,11 @@ input[type="button"]:disabled,
   transition: transform 1s ease, opacity 1s ease;
   /* background: rgba(23, 24, 32, 0.95); */
   background: #ffffffe0;
-
+  /* background-image: url(/images/click-here.svg); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom;
+  background-size: 350px 300px;
   border-style: solid;
   opacity: 1;
   position: absolute;
@@ -3300,6 +3304,8 @@ input[type="button"]:disabled,
 .blue {
   padding: 15px;
   background-color: #006afe;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .spotlight.bottom .content .container .row .col-4 {
@@ -3319,10 +3325,16 @@ input[type="button"]:disabled,
 
 .x {
   display: block;
-  background-color: red;
+  /* background-color: red; */
   width: fit-content;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
+}
+.x a {
+  color: var(--THEME-COLOR);
+  font-size: 1.1rem;
+  font-weight: 300;
+  border-bottom: 2px solid var(--THEME-COLOR);
 }
 
 .spotlight.left .content,
